@@ -1,0 +1,19 @@
+{
+  "name": "lux-token",
+  "version": "1.0.0",
+  "description": "LUX blockchain ERC-20 + ERC-721 + Factory",
+  "scripts": {
+    "deploy": "npx hardhat run scripts/deployAll.js --network lux",
+    "mint": "npx hardhat run scripts/mintAll.js --network lux",
+    "deploy-mint": "npx hardhat run scripts/deployAndMint.js --network lux",
+    "deploy-factory": "npx hardhat run scripts/deployFactory.js --network lux"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.9.3",
+    "ethers": "^6.0.0"
+  },
+  "devDependencies": {
+    "hardhat": "^2.16.0",
+    "@nomiclabs/hardhat-ethers": "^2.2.6"
+  }
+}
